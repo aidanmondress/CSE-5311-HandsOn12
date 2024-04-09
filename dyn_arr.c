@@ -15,7 +15,7 @@ void makeArray(dynamicArray* arr, size_t n)
     arr->totalSize = n;
 }
 
-void freeArray(DynamicArray* arr) 
+void freeArray(dynamicArray* arr) 
 {
     free(arr->arr);
     arr->arr = NULL;
@@ -40,6 +40,6 @@ int main()
     {
         insertArray(&arr, i);
     }
-    printf("Array Element 5: %d\n", a.array[4]);
+    printf("Array Element 5: %d\n", arr.arr[4]);
     freeArray(&a);
 }
